@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio SIO — Johan MERAND</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="#" class="nav-logo" onclick="showPage('accueil')">⟨<span>SIO</span>⟩</a>
+    <div class="nav-links">
+        <button onclick="showPage('accueil')" class="nav-btn active" id="btn-accueil">Accueil</button>
+        <button onclick="showPage('competences')" class="nav-btn" id="btn-competences">Compétences</button>
+        <button onclick="showPage('projets')" class="nav-btn" id="btn-projets">Projets</button>
+        <button onclick="showPage('stages')" class="nav-btn" id="btn-stages">Stages</button>
+        <button onclick="showPage('veille')" class="nav-btn" id="btn-veille">Veille</button>
+        <button onclick="showPage('cv')" class="nav-btn" id="btn-cv">CV</button>
+        <button onclick="showPage('contact')" class="nav-btn" id="btn-contact">Contact</button>
+    </div>
+</nav>
+
+<div class="page-container">
+
+    <section id="accueil" class="content-page active">
+        <div class="hero-flex">
+            <div>
+                <h1>Johan <span style="color:var(--accent)">MERAND</span></h1>
+                <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 500px;">
+                    Étudiant en BTS Services Informatiques aux Organisations. Spécialisé en réseaux (SISR). Passionné par l'administration système, le déploiement informatique et les infrastructures réseau.
+                </p>
+                <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:20px;">
+                    <button class="btn-action" onclick="showPage('projets')">Découvrir mes travaux</button>
+                    <button class="btn-action" style="background:transparent; border:1px solid var(--accent); color:var(--accent);" onclick="showPage('stages')">Mon stage</button>
+                </div>
+            </div>
+            <div class="card" style="flex: 1; text-align: center;">
+                <div style="font-size: 4rem;">👨‍💻</div>
+                <h3>Promotion 2025-2027</h3>
+                <p style="color:var(--text-muted); margin-top:8px;">La Joliverie, Nantes</p>
+                <hr style="border-color:var(--border); margin:15px 0;">
+                <div style="display:flex; justify-content:space-around; text-align:center;">
+                    <div><div style="font-size:1.6rem; font-weight:800; color:var(--accent)">30+</div><div style="font-size:0.8rem; color:var(--text-muted)">PC déployés</div></div>
+                    <div><div style="font-size:1.6rem; font-weight:800; color:var(--accent)">6</div><div style="font-size:0.8rem; color:var(--text-muted)">Semaines de stage</div></div>
+                    <div><div style="font-size:1.6rem; font-weight:800; color:var(--accent)">3+</div><div style="font-size:0.8rem; color:var(--text-muted)">Projets réalisés</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="competences" class="content-page">
+        <h2>Mes Compétences</h2>
+        <div class="grid-3">
+            <div class="card">
+                <div style="font-size:2rem; margin-bottom:10px;">🌐</div>
+                <h3>Développement Web</h3>
+                <p style="color:var(--text-muted); margin-top:8px;">HTML, CSS, JavaScript, PHP</p>
+                <div style="margin-top:15px; display:flex; flex-wrap:wrap; gap:6px;">
+                    <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">PHP</span>
+                </div>
+            </div>
+            <div class="card">
+                <div style="font-size:2rem; margin-bottom:10px;">🗄️</div>
+                <h3>Bases de données</h3>
+                <p style="color:var(--text-muted); margin-top:8px;">Conception et administration de bases de données relationnelles.</p>
+                <div style="margin-top:15px; display:flex; flex-wrap:wrap; gap:6px;">
+                    <span class="tag">SQL</span><span class="tag">MySQL</span>
+                </div>
+            </div>
+            <div class="card">
+                <div style="font-size:2rem; margin-bottom:10px;">🖧</div>
+                <h3>Réseaux & Systèmes</h3>
+                <p style="color:var(--text-muted); margin-top:8px;">Administration système et réseau, configuration d'équipements.</p>
+                <div style="margin-top:15px; display:flex; flex-wrap:wrap; gap:6px;">
+                    <span class="tag">Cisco</span><span class="tag">Linux</span><span class="tag">Windows Server</span><span class="tag">Aruba</span>
+                </div>
+            </div>
+            <div class="card">
+                <div style="font-size:2rem; margin-bottom:10px;">🛠️</div>
+                <h3>Outils & Déploiement</h3>
+                <p style="color:var(--text-muted); margin-top:8px;">Gestion de parc informatique et déploiement de postes en entreprise.</p>
+                <div style="margin-top:15px; display:flex; flex-wrap:wrap; gap:6px;">
+                    <span class="tag">SCCM</span><span class="tag">GLPI</span><span class="tag">TeamViewer</span><span class="tag">Docker</span>
+                </div>
+            </div>
+            <div class="card">
+                <div style="font-size:2rem; margin-bottom:10px;">💻</div>
+                <h3>Systèmes d'exploitation</h3>
+                <p style="color:var(--text-muted); margin-top:8px;">Utilisation et administration des principaux OS du marché.</p>
+                <div style="margin-top:15px; display:flex; flex-wrap:wrap; gap:6px;">
+                    <span class="tag">Windows 10/11</span><span class="tag">Windows Server</span><span class="tag">Linux Ubuntu</span>
+                </div>
+            </div>
+            <div class="card">
+                <div style="font-size:2rem; margin-bottom:10px;">📋</div>
+                <h3>Gestion de projet</h3>
+                <p style="color:var(--text-muted); margin-top:8px;">Organisation des tâches, gestion des tickets et suivi des interventions.</p>
+                <div style="margin-top:15px; display:flex; flex-wrap:wrap; gap:6px;">
+                    <span class="tag">GLPI</span><span class="tag">Excel</span><span class="tag">Teams</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets" class="content-page">
+        <h2>Réalisations</h2>
+        <div class="grid-3">
+            <div class="card">
+                <span style="color:var(--accent); font-family:'Syne'; font-weight:800;">#01</span>
+                <h3 style="margin-top:8px;">Projet Python</h3>
+                <p style="color:var(--text-muted); margin-top:8px;">Script d'automatisation pour gérer des utilisateurs via un fichier CSV. Création, suppression et modification de comptes en masse.</p>
+                <div style="margin-top:15px; display:flex; flex-wrap:wrap; gap:6px;">
+                    <span class="tag">Python</span><span class="tag">CSV</span><span class="tag">Automatisation</span>
+                </div>
+            </div>
+            <div class="card">
+                <span style="color:var(--accent); font-family:'Syne'; font-weight:800;">#02</span>
+                <h3 style="margin-top:8px;">Projet GSB</h3>
+                <p style="color:var(--text-muted); margin-top:8px;">Mise en place d'une infrastructure réseau complète pour la société fictive Galaxy Swiss Bourdin : serveurs, VLAN, services DNS/DHCP.</p>
+                <div style="margin-top:15px; display:flex; flex-wrap:wrap; gap:6px;">
+                    <span class="tag">Réseau</span><span class="tag">Windows Server</span><span class="tag">VLAN</span><span class="tag">DNS</span>
+                </div>
+            </div>
+            <div class="card">
+                <span style="color:var(--accent); font-family:'Syne'; font-weight:800;">#03</span>
+                <h3 style="margin-top:8px;">Projet Docker</h3>
+                <p style="color:var(--text-muted); margin-top:8px;">Déploiement d'applications conteneurisées avec Docker Compose. Mise en place de services web et bases de données isolés.</p>
+                <div style="margin-top:15px; display:flex; flex-wrap:wrap; gap:6px;">
+                    <span class="tag">Docker</span><span class="tag">Docker Compose</span><span class="tag">Linux</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stages" class="content-page">
+        <h2>Expériences en entreprise</h2>
+
+        <div class="card" style="margin-bottom: 25px;">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:15px;">
+                <div style="flex:1; min-width:250px;">
+                    <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+                        <div style="background:var(--accent); border-radius:8px; padding:8px 14px; font-family:'Syne'; font-weight:800;">ACB</div>
+                        <span style="color:var(--text-muted); font-size:0.85rem;">11 mai — 19 juin 2026</span>
+                    </div>
+                    <h3>Technicien informatique — Stage de 1ère année</h3>
+                    <p style="color:var(--text-muted); margin-top:8px;">Ateliers Chantiers de Bretagne — 27 rue du Ranzay, Nantes (44)</p>
+                    <p style="color:var(--text-muted); font-size:0.85rem; margin-top:4px;">Tuteur : Yves LARROUMET</p>
+                </div>
+                <div>
+                    <span style="background:rgba(108,99,255,0.15); color:var(--accent); padding:5px 12px; border-radius:20px; font-size:0.8rem; font-weight:600;">SISR</span>
+                </div>
+            </div>
+
+            <hr style="border-color:var(--border); margin:20px 0;">
+
+            <h4 style="margin-bottom:12px; color:var(--accent);">Missions réalisées</h4>
+            <div class="grid-3" style="gap:15px;">
+                <div style="background:var(--surface2); border-radius:10px; padding:15px;">
+                    <div style="font-size:1.5rem; margin-bottom:6px;">🖥️</div>
+                    <strong>Déploiement PC</strong>
+                    <p style="color:var(--text-muted); font-size:0.85rem; margin-top:5px;">~30 postes Lenovo configurés et déployés via SCCM pour les salariés d'ACB.</p>
+                </div>
+                <div style="background:var(--surface2); border-radius:10px; padding:15px;">
+                    <div style="font-size:1.5rem; margin-bottom:6px;">🎫</div>
+                    <strong>Support utilisateur</strong>
+                    <p style="color:var(--text-muted); font-size:0.85rem; margin-top:5px;">Gestion des tickets GLPI, dépannage à distance via TeamViewer et interventions physiques.</p>
+                </div>
+                <div style="background:var(--surface2); border-radius:10px; padding:15px;">
+                    <div style="font-size:1.5rem; margin-bottom:6px;">📦</div>
+                    <strong>Gestion du parc</strong>
+                    <p style="color:var(--text-muted); font-size:0.85rem; margin-top:5px;">Inventaire, préparation de PC stagiaires, effacement sécurisé avec Blancco.</p>
+                </div>
+            </div>
+
+            <hr style="border-color:var(--border); margin:20px 0;">
+
+            <h4 style="margin-bottom:12px; color:var(--accent);">Outils & technologies utilisés</h4>
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px;">
+                <span class="tag">SCCM</span>
+                <span class="tag">GLPI</span>
+                <span class="tag">TeamViewer</span>
+                <span class="tag">Aruba</span>
+                <span class="tag">Windows 10/11</span>
+                <span class="tag">Blancco</span>
+                <span class="tag">Microsoft Teams</span>
+                <span class="tag">Lenovo ThinkPad</span>
+            </div>
+
+            <hr style="border-color:var(--border); margin:20px 0;">
+
+            <h4 style="margin-bottom:12px; color:var(--accent);">📄 Rapport de stage</h4>
+            <p style="color:var(--text-muted); margin-bottom:15px;">Téléchargez le rapport complet de mon stage chez ACB (BTS SIO 1ère année — 2025/2026).</p>
+            <a href="SISR26_MERAND_Johan_RapportStage1.pdf" download class="btn-action" style="display:inline-flex; align-items:center; gap:8px;">
+                📥 Télécharger le rapport de stage
+            </a>
+        </div>
+    </section>
+
+    <section id="veille" class="content-page">
+        <h2>Veille Technologique</h2>
+        <div style="display: flex; gap: 10px; margin-bottom: 30px; flex-wrap: wrap;">
+            <button onclick="switchVeille('v1')" id="tab-v1" class="nav-btn active">Infrastructure 6G</button>
+            <button onclick="switchVeille('v2')" id="tab-v2" class="nav-btn">Wi-Fi 7 / 802.11be</button>
+        </div>
+
+        <div id="content-v1" class="veille-content active">
+            <div class="card">
+                <h3>La Révolution 6G et les Ondes Térahertz</h3>
+                <p style="color: var(--text-muted); margin-bottom: 20px;">Vers un débit de 1 Tbit/s et une convergence IA d'ici 2030.</p>
+                <button class="btn-action" onclick="openVeilleModal('modal-6g')">Lire le rapport détaillé</button>
+            </div>
+        </div>
+
+        <div id="content-v2" class="veille-content" style="display:none;">
+            <div class="card">
+                <h3>Wi-Fi 7 : La performance "Ethernet-like"</h3>
+                <p style="color: var(--text-muted); margin-bottom: 20px;">Étude du standard 802.11be et de la technologie MLO.</p>
+                <button class="btn-action" onclick="openVeilleModal('modal-wifi7')">Lire le rapport détaillé</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cv" class="content-page">
+        <h2>Mon Curriculum Vitae</h2>
+        <div style="text-align: center;">
+            <div class="card" style="display: inline-block; padding: 10px; background: var(--surface2); max-width: 800px;">
+                <img src="Johan_Merand_CV.png" alt="Aperçu du CV" style="width: 100%; border-radius: 4px;">
+            </div>
+            <div style="margin-top: 20px;">
+                <a href="Johan_Merand_CV.pdf" download class="btn-action">📥 Télécharger le PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="content-page">
+        <h2>Me contacter</h2>
+        <div class="card" style="max-width: 600px; margin: 0 auto;">
+            <p><strong>Email :</strong> j.merand@email.com</p>
+            <p><strong>LinkedIn :</strong> <a href="#" target="_blank" style="color:var(--accent)">Profil LinkedIn</a></p>
+        </div>
+    </section>
+
+</div>
+
+<div id="modal-6g" class="modal-overlay">
+    <div class="modal-content card-note">
+        <span class="close-modal" onclick="closeVeilleModal('modal-6g')">&times; Fermer</span>
+        <h2>Rapport : La Révolution 6G</h2>
+        <hr>
+        <p>L'objectif de cette veille est d'anticiper les mutations des infrastructures réseaux d'ici 2030...</p>
+        <p>Utilisation du spectre Térahertz (100 GHz - 10 THz) pour des débits de 1 Tbit/s et IA native.</p>
+    </div>
+</div>
+
+<div id="modal-wifi7" class="modal-overlay">
+    <div class="modal-content card-note">
+        <span class="close-modal" onclick="closeVeilleModal('modal-wifi7')">&times; Fermer</span>
+        <h2>Rapport : Le Standard Wi-Fi 7</h2>
+        <hr>
+        <p>Le Wi-Fi 7 (802.11be) introduit le MLO (Multi-Link Operation) et des canaux de 320 MHz.</p>
+        <p>Cela permet une stabilité de connexion proche du câble Ethernet pour les usages critiques.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 — Portfolio BTS SIO — Johan MERAND</p>
+</footer>
+
+<script>
+    function showPage(pageId) {
+        document.querySelectorAll('.content-page').forEach(p => p.classList.remove('active'));
+        document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+        document.getElementById(pageId).classList.add('active');
+        if(document.getElementById('btn-' + pageId)) document.getElementById('btn-' + pageId).classList.add('active');
+        window.scrollTo(0, 0);
+    }
+
+    function switchVeille(id) {
+        document.querySelectorAll('.veille-content').forEach(c => c.style.display = 'none');
+        document.getElementById('content-' + id).style.display = 'block';
+        document.getElementById('tab-v1').classList.remove('active');
+        document.getElementById('tab-v2').classList.remove('active');
+        document.getElementById('tab-' + id).classList.add('active');
+    }
+
+    function openVeilleModal(id) {
+        document.getElementById(id).style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeVeilleModal(id) {
+        document.getElementById(id).style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+
+    window.onclick = function(event) {
+        if (event.target.className === 'modal-overlay') {
+            event.target.style.display = "none";
+            document.body.style.overflow = 'auto';
+        }
+    }
+</script>
+
+</body>
+</html>
